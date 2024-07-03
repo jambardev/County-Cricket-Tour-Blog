@@ -26,7 +26,8 @@ SECRET_KEY = 'django-insecure-ms@qat-raa!@ky*hkzx*8nl-%#ck&0ifuyl#-$w2-w15d-x7qj
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    "8000-jambardev-countycricket-8qmwuq0hhug.ws.codeinstitute-ide.net", ".heroku.com"
+    "8000-jambardev-countycricket-8qmwuq0hhug.ws.codeinstitute-ide.net", 
+    ".herokuapp.com"
     ]
 
 
