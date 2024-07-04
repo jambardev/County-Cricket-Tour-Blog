@@ -76,5 +76,8 @@ class Comment(models.Model):
         User, on_delete=models.CASCADE, related_name="commenter"
         )
     body = models.TextField()
-    created_on = models.DateTimeField(auto_now_add=True)
+    added_on = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"Comment added by {self.author} on {self.added_on}"
 
