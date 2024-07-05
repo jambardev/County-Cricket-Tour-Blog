@@ -20,6 +20,7 @@
 
     {% for post in object_list %}
     <h2>{{post.title}}</h2>
+    <a href="{% url 'post_detail' post.slug %}" class="post-link"></a>
     <p>{{post.stadium}}</p>
     <p>{{post.visitor}}</p>
     <p>Author: {{post.author}}</p>
