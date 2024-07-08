@@ -9,6 +9,9 @@ class PostList(generic.ListView):
     # Sets number of posts on each page
     paginate_by = 6
 
+def about_view(request):
+    return render(request, 'about.html')
+
 # Function-based view to display individual posts
 def post_detail(request, slug):
 
