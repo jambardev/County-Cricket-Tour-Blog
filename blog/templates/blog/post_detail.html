@@ -6,9 +6,9 @@
         <div class="row g-0">
             <div class="col-md-6 masthead-text">
                 <!-- Post title -->
-                <h1 class="post-title">{{ post.title }}</h1>
+                <h1>{{ post.title }}</h1>
                 <!-- Post author and created on info -->
-                <p class="post-subtitle">{{ post.author }} | {{ post.created_on }}</p>
+                <p>Posted by {{ post.author }} | {{ post.created_on }}</p>
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
                 <img src="{% static 'images/default_image.jpg' %}" width="100%" height="100%" class="scale" alt="placeholder">
@@ -49,7 +49,7 @@
             {% for comment in comments %}
                 <div class="p-2 comments">
                     <p>
-                        {{ comment.author }} {{ comment.created_on }} wrote:
+                        On {{ comment.added_on }} {{ comment.author }} wrote:
                     </p>
                     <div>
                         {{ comment.body | linebreaks }}
