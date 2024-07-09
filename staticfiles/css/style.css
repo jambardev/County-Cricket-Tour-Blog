@@ -2,3 +2,7 @@
     color: orange;
 }
 
+.card {
+    border: none;
+    background-color: transparent;
+}
