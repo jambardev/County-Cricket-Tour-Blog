@@ -55,6 +55,9 @@
                         <div>
                             {{ comment.body | linebreaks }}
                         </div>
+                        {% if user.is_authenticated and comment.author == user %}
+                        <button class="btn" comment_id="{{ comment.id }}">Edit Comment</button>
+                        {% endif %}
                     </div>
                 {% endfor %}
             </div>
