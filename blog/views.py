@@ -48,7 +48,7 @@ def post_detail(request, slug):
 
 # View allowing a user to edit their own comments
 
-def comment_edit(request, slug, comment_id):
+def edit_comment(request, slug, comment_id):
     
     if request.method == "POST":
 
