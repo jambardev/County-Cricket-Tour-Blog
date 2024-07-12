@@ -1,8 +1,9 @@
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic
 from django.contrib import messages
 from django.http import HttpResponseRedirect
 from .models import Post, Comment
+from .forms import PostForm
 from .forms import CommentForm
 
 # Create your views here.
@@ -14,6 +15,23 @@ class PostList(generic.ListView):
 
 def about_view(request):
     return render(request, 'about.html')
+
+# View for a user to add a new post
+def add_post(request):
+    if request.method == 'POST':
+        form = PostForm(request.POST)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.author = request.user
+            post.save()
+            messages.success(request, 'Thanks for joining the discussion, post created successfully.')
+            return redirect('post_detail', slug=post.slug)
+        else:
+            messages.error(request, 'Error creating post.')
+    else:
+        form = PostForm()
+    
+    return render(request, 'blog/add_post.html', {'form': form})
 
 # Function-based view to display individual posts
 def post_detail(request, slug):
