@@ -49,20 +49,20 @@ def post_detail(request, slug):
 # View allowing a user to edit their own comments
 
 def edit_comment(request, slug, comment_id):
+    post = get_object_or_404(Post, slug=slug, status=1)
+    comment = get_object_or_404(Comment, pk=comment_id, post=post)
     
     if request.method == "POST":
-
-        queryset = Post.objects.filter(status=1)
-        post = get_object_or_404(queryset, slug=slug)
-        comment = get_object_or_404(Comment, pk=comment_id)
         comment_form = CommentForm(data=request.POST, instance=comment)
 
-        if comment_form.is_valid() and comment.author == request.user:
-            comment = comment_form.save(commit=False)
-            comment.post = post
-            comment.save()
+        if comment_form.is_valid():
+            comment_form.save()
             messages.add_message(request, messages.SUCCESS, 'Thanks, Comment Updated!')
+            return HttpResponseRedirect(reverse('post_detail', args=[slug]))
         else:
             messages.add_message(request, messages.ERROR, 'Sorry, Error updating comment!')
 
-    return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+    else:
+        comment_form = CommentForm(instance=comment)
+
+    return render(request, 'blog/edit_comment.html', {'form': comment_form, 'post': post})
