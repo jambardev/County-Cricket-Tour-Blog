@@ -66,3 +66,18 @@ def edit_comment(request, slug, comment_id):
         comment_form = CommentForm(instance=comment)
 
     return render(request, 'blog/edit_comment.html', {'form': comment_form, 'post': post})
+
+# View allowing a user to delete their own comments
+
+def comment_delete(request, slug, comment_id):
+    queryset = Post.objects.filter(status=1)
+    post = get_object_or_404(queryset, slug=slug)
+    comment = get_object_or_404(Comment, pk=comment_id)
+
+    if comment.author == request.user:
+        comment.delete()
+        messages.add_message(request, messages.SUCCESS, 'No problem, comment deleted!')
+    else:
+        messages.add_message(request, messages.ERROR, 'You can only delete your own comments!')
+
+    return HttpResponseRedirect(reverse('post_detail', args=[slug]))
