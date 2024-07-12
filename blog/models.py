@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from autoslug import AutoSlugField
 
 STATUS = ((0, "Draft"), (1, "Published"))
 STADIUM_CHOICES = [
@@ -51,9 +52,11 @@ COMPETITION_CHOICES = [
 ]
 
 # Create your models here.
+
+# New post model
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
-    slug = models.SlugField(max_length=200, unique=True)
+    slug = AutoSlugField(populate_from='title', unique=True)
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="blog_posts"
     )
@@ -67,7 +70,7 @@ class Post(models.Model):
     def __str__(self):
         return f"{self.title} | written by {self.author} on {self.created_on}"
 
-
+#Comment model
 class Comment(models.Model):
     post = models.ForeignKey(
         Post, on_delete=models.CASCADE, related_name="comments"
@@ -80,4 +83,6 @@ class Comment(models.Model):
 
     def __str__(self):
         return f"Comment added by {self.author} on {self.added_on}"
+
+
 
