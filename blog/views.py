@@ -69,7 +69,7 @@ def edit_comment(request, slug, comment_id):
 
 # View allowing a user to delete their own comments
 
-def comment_delete(request, slug, comment_id):
+def delete_comment(request, slug, comment_id):
     queryset = Post.objects.filter(status=1)
     post = get_object_or_404(queryset, slug=slug)
     comment = get_object_or_404(Comment, pk=comment_id)
