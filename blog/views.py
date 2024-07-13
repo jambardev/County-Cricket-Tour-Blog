@@ -105,7 +105,7 @@ def delete_post(request, slug):
     if post.author == request.user:
         if request.method == "POST":
             post.delete()
-            messages.add_message(request, messages.SUCCESS, 'No problem, that post has bee deleted!')
+            messages.add_message(request, messages.SUCCESS, 'No problem, that post has been deleted!')
             return HttpResponseRedirect(reverse('home'))
     else:
         messages.add_message(request, messages.ERROR, 'You can only delete your own posts!')
