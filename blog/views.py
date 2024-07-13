@@ -65,7 +65,6 @@ def post_detail(request, slug):
     )
 
 # View allowing a user to edit their own comments
-
 def edit_comment(request, slug, comment_id):
     post = get_object_or_404(Post, slug=slug, status=1)
     comment = get_object_or_404(Comment, pk=comment_id, post=post)
@@ -86,7 +85,6 @@ def edit_comment(request, slug, comment_id):
     return render(request, 'blog/edit_comment.html', {'form': comment_form, 'post': post})
 
 # View allowing a user to delete their own comments
-
 def delete_comment(request, slug, comment_id):
     queryset = Post.objects.filter(status=1)
     post = get_object_or_404(queryset, slug=slug)
@@ -99,3 +97,17 @@ def delete_comment(request, slug, comment_id):
         messages.add_message(request, messages.ERROR, 'You can only delete your own comments!')
 
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
+# View allowing a user to delete their own posts
+def delete_post(request, slug):
+    post = get_object_or_404(Post, slug=slug)
+
+    if post.author == request.user:
+        if request.method == "POST":
+            post.delete()
+            messages.add_message(request, messages.SUCCESS, 'No problem, that post has bee deleted!')
+            return HttpResponseRedirect(reverse('home'))
+    else:
+        messages.add_message(request, messages.ERROR, 'You can only delete your own posts!')
+
+    return render(request, 'blog/delete_post.html', {'post': post})
