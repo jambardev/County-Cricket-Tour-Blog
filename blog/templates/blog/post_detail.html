@@ -14,7 +14,10 @@
                 <p>{{post.stadium}}</p>
                 <p>{{post.visitor}}</p>
                 <p>{{post.competition}}</p>
-                
+                <br>
+                {% if user.is_authenticated and post.author == user %}
+                <a href="{% url 'delete_post' post.slug %}" class="btn btn-danger">Delete Post</a>
+                {% endif %}
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
                 <img src="{% static 'images/default_image.jpg' %}" width="100%" height="100%" class="scale" alt="placeholder">
