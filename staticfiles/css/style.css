@@ -1,5 +1,26 @@
 .title {
-    color: orange;
+    color: red;
+}
+
+.title-banner {
+    background-color: #90EE90;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+
+.nav-bg {
+    background-color: #90EE90
+}
+
+.footer-bg {
+    background-color: #90EE90
+}
+
+.footer-text {
+    color: #8B0000
 }
 
 .card {
