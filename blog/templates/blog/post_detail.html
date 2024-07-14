@@ -11,6 +11,7 @@
                 <!-- Post author and created on info -->
                 <p>Posted by {{ post.author }} on {{ post.created_on }}</p>
                 <br>
+                <!-- Post details -->
                 <p>Stadium: {{post.stadium}}</p>
                 <p>Visitors: {{post.visitor}}</p>
                 <p>Competition: {{post.competition}}</p>
@@ -19,6 +20,7 @@
                 <a href="{% url 'delete_post' post.slug %}" class="btn btn-danger">Delete Post</a>
                 {% endif %}
             </div>
+            <!-- Stock image -->
             <div class="d-none d-md-block col-md-6 masthead-image">
                 <img src="{% static 'images/default_image.jpg' %}" width="100%" height="100%" class="scale" alt="placeholder">
             </div>
@@ -65,7 +67,7 @@
                         </div>
                         {% if user.is_authenticated and comment.author == user %}
                         <a href="{% url 'edit_comment' post.slug comment.id %}" class="btn btn-primary">Edit Comment</a>
-                        <a href="{% url 'delete_comment' post.slug comment.id %}" class="btn btn-primary">Delete Comment</a>
+                        <a href="{% url 'delete_comment' post.slug comment.id %}" class="btn btn-danger">Delete Comment</a>
                         {% endif %}
                     </div>
                 {% endfor %}
