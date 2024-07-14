@@ -9,11 +9,11 @@
                 <!-- Post title -->
                 <h1>{{ post.title }}</h1>
                 <!-- Post author and created on info -->
-                <p>Posted by {{ post.author }} | {{ post.created_on }}</p>
+                <p>Posted by {{ post.author }} on {{ post.created_on }}</p>
                 <br>
-                <p>{{post.stadium}}</p>
-                <p>{{post.visitor}}</p>
-                <p>{{post.competition}}</p>
+                <p>Stadium: {{post.stadium}}</p>
+                <p>Visitors: {{post.visitor}}</p>
+                <p>Competition: {{post.competition}}</p>
                 <br>
                 {% if user.is_authenticated and post.author == user %}
                 <a href="{% url 'delete_post' post.slug %}" class="btn btn-danger">Delete Post</a>

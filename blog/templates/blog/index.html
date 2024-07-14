@@ -22,9 +22,9 @@
     <h2>
         <a href="{% url 'post_detail' post.slug %}" class="post-link">{{post.title}}</a>
     </h2>
-    <p>{{post.stadium}}</p>
-    <p>{{post.visitor}}</p>
-    <p>{{post.competition}}</p>
+    <p>Stadium: {{post.stadium}}</p>
+    <p>Visitor: {{post.visitor}}</p>
+    <p>Competition: {{post.competition}}</p>
     <p>Author: {{post.author}}</p>
     {% endfor %}
 

@@ -98,16 +98,16 @@ WSGI_APPLICATION = 'countychamp.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-# DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': BASE_DIR / 'db.sqlite3',
-#    }
-#}
-
 DATABASES = {
-    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
 }
+
+# DATABASES = {
+#    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+# }
 
 CSRF_TRUSTED_ORIGINS = [
     "https://8000-jambardev-countycricket-8qmwuq0hhug.ws.codeinstitute-ide.net",
