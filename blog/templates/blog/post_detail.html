@@ -3,7 +3,7 @@
 {% load crispy_forms_tags %}
 
 <div>
-    <div class="container">
+    <div class="container mt-4">
         <div class="row g-0">
             <div class="col-md-6">
                 <!-- Post title -->
@@ -31,7 +31,7 @@
 <div class="container">
     <div class="row">
         <div class="col card mb-4  mt-3 left  top">
-            <div class="card-body">
+            <div>
                 <!-- The post content goes inside the card-text. -->
                 <!-- Safe filter inside the template tags marks the variable as safe for HTML rendering -->
                 <p class="card-text">
@@ -55,7 +55,7 @@
     <div class="row">
         <div class="col-md-8 card mb-4 mt-3">
             <h3>Comments:</h3>
-            <div class="card-body">
+            <div>
                 <!-- For loop to iterate through each comment in comments -->
                 {% for comment in comments %}
                     <div class="p-2 comments">
@@ -75,7 +75,7 @@
         </div>
         <!-- Creating New Comments -->
         <div class="col-md-4 card mb-4 mt-3">
-            <div class="card-body">
+            <div>
                 {% if user.is_authenticated %}
             <h3>Leave a comment:</h3>
             <p>Posting as: {{ user.username }}</p>
