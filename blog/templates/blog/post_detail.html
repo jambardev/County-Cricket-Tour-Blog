@@ -2,12 +2,12 @@
 {% load static %}
 {% load crispy_forms_tags %}
 
-<div class="masthead">
+<div>
     <div class="container">
         <div class="row g-0">
-            <div class="col-md-6 masthead-text">
+            <div class="col-md-6">
                 <!-- Post title -->
-                <h1>{{ post.title }}</h1>
+                <h1 class="page-title">{{ post.title }}</h1>
                 <!-- Post author and created on info -->
                 <p>Posted by {{ post.author }} on {{ post.created_on }}</p>
                 <br>
@@ -21,7 +21,7 @@
                 {% endif %}
             </div>
             <!-- Stock image -->
-            <div class="d-none d-md-block col-md-6 masthead-image">
+            <div class="d-none d-md-block col-md-6">
                 <img src="{% static 'images/default_image.jpg' %}" width="100%" height="100%" class="scale" alt="placeholder">
             </div>
         </div>

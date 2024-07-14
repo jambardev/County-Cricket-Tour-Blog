@@ -16,6 +16,7 @@
 .page-title {
     color: #8B0000;
     text-align: center;
+    text-decoration: underline;
 }
 
 .nav-bg {
@@ -38,4 +39,22 @@
 .card {
     border: none;
     background-color: transparent;
+}
+
+.about {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-image {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.about-image img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
 }

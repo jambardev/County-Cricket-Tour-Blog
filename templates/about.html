@@ -1,6 +1,8 @@
 
 {% extends "base.html" %}
 
+{% load static %}
+
 {% block content %}
 
 <!-- Start of about.html content -->
@@ -16,9 +18,15 @@
 </head>
 
 <body>
-    <h1 class="page-title">About the Site</h1>
+    <div class="container about">
+        <h1 class="page-title">About the Site</h1>
 
-    <p>Welcome to this County Cricket Blog site. A place for lovers of this wonderful game to come together and share their experiences of county cricket. To join our community simply create an account and the post and comment to your hearts content. Always keep it kind, our only rival here is the english weather.</p>
+        <p>Welcome to this County Cricket Blog site. A place for lovers of this wonderful game to come together and share their experiences of county cricket. To join our community simply create an account and then post and comment to your hearts content. Always keep it kind, our only rival here is the English weather.</p>
+
+        <div class="about-image">
+            <img src="{% static 'images/default_image.jpg' %}" width="100%" height="100%" class="scale" alt="placeholder">
+        </div>
+    </div>
 </body>
 
 </html>
