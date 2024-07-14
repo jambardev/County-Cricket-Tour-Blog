@@ -1,4 +1,19 @@
+# County Cricket Tour Blog:
 
+This blog site is a page that allows lovers of county cricket to come together and share their experiences of the 18 different county grounds.
+
+The live application can be viewed here:
+
+# Purpose and Target Audience:
+
+**Problem Statement:**
+County cricket is becoming an under appreciated form of the game with much of the online space taken up by international or franchise cricket. It can be hard for followers of the county game to find a space for a more reasoned, friendly discourse about county cricket specifically.
+
+**Purpose:**
+This app will allow people who love and follow county cricket around the country to come together as a community. Share their thoughts on the game and the experience of attending matches. It will also allow for tips about making the most of the different host stadiums.
+
+**Target Audience:**
+The target audience is quite simply anyone who loves county cricket.
 
 <img width="342" alt="image" src="https://github.com/jambardev/County-Cricket-Tour-Blog/assets/165150313/23f7ce00-eb1e-445c-9907-1d9b8a0ac391">
 
