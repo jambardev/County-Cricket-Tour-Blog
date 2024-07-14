@@ -19,6 +19,12 @@
     text-decoration: underline;
 }
 
+.post-title {
+    color: blue;
+    text-align: center;
+    text-decoration: underline;
+}
+
 .nav-bg {
     background-color: #90EE90;
 }
@@ -34,6 +40,10 @@
 
 .footer-text {
     color: #8B0000;
+}
+
+.index {
+    padding: 20px;
 }
 
 .card {
@@ -63,4 +73,32 @@
     margin: 0 auto;
     max-width: 100%;
     height: auto;
+}
+
+.np {
+    padding: 20px;
+}
+
+.post {
+    width: calc(33.33% - 20px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float: left;
+    box-sizing: border-box;
+}
+
+/* Media Queries for index page */
+
+@media (max-width: 992px) {
+    .post {
+        width: calc(50% - 20px);
+    }
+
+}
+
+@media (max-width: 576px) {
+    .post {
+        width: 100%;
+        margin-right: 0;
+    }
 }
