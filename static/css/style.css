@@ -1,5 +1,7 @@
 .title {
-    color: red;
+    color: #8B0000;
+    font-size: 4rem;
+    font-weight: bold;
 }
 
 .title-banner {
@@ -11,16 +13,26 @@
     width: 100%;
 }
 
+.page-title {
+    color: #8B0000;
+    text-align: center;
+}
+
 .nav-bg {
-    background-color: #90EE90
+    background-color: #90EE90;
+}
+
+.nav-btn {
+    color: white;
+    background-color: #8B0000
 }
 
 .footer-bg {
-    background-color: #90EE90
+    background-color: #90EE90;
 }
 
 .footer-text {
-    color: #8B0000
+    color: #8B0000;
 }
 
 .card {
