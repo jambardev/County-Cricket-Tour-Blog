@@ -15,6 +15,18 @@ This app will allow people who love and follow county cricket around the country
 **Target Audience:**
 The target audience is quite simply anyone who loves county cricket.
 
+# User Stories:
+
+* As the site owner I want the site to be easy and self explanatory to navigate.
+* As a user I want to be able to review the posts of other people and add comments.
+* As a user I want to be able to create a profile, which will allow me to create posts and view my previous ones.
+* As the site owner I want users to be able to read about the site on the "about" page.
+* As the site owner I want to ensure all log in details are secure.
+
+# Wireframe & Initial Design:
+
+
+
 <img width="342" alt="image" src="https://github.com/jambardev/County-Cricket-Tour-Blog/assets/165150313/23f7ce00-eb1e-445c-9907-1d9b8a0ac391">
 
 <img width="342" alt="image" src="https://github.com/jambardev/County-Cricket-Tour-Blog/assets/165150313/700a36dc-2f99-4df0-85ee-53200f0b7073">
