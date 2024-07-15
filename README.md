@@ -25,21 +25,55 @@ The target audience is quite simply anyone who loves county cricket.
 
 # Wireframe & Initial Design:
 
+### Home Page
+
+* Laptop
+
+<img width="639" alt="image" src="https://github.com/user-attachments/assets/08cf70af-0367-45f1-9f4b-eb495aef44e5">
+
+* Mobile
+
+<img width="233" alt="image" src="https://github.com/user-attachments/assets/17078a55-3ad5-4e1d-9158-b7918861423b">
+
+### Login/Register
+
+* Laptop
+
+<img width="565" alt="image" src="https://github.com/user-attachments/assets/3fe81df8-49e1-4a50-a0e7-7a232f276538">
+
+* Mobile
+
+<img width="224" alt="image" src="https://github.com/user-attachments/assets/4382c60c-a7ea-438d-883e-6ca6b5eb7915">
+
+### About
+
+* Laptop
+
+<img width="568" alt="image" src="https://github.com/user-attachments/assets/b1ccd8c2-fe3f-478d-8fbd-1fe80f769ad0">
+
+* Mobile
+
+<img width="240" alt="image" src="https://github.com/user-attachments/assets/89b1325c-b7fa-4b9f-8fde-0222a69042dc">
+
+### Single Post
+
+* Laptop
+
+<img width="562" alt="image" src="https://github.com/user-attachments/assets/16d5ac34-3bd7-4e0b-9544-55172e7b0feb">
+
+* Mobile
+
+<img width="239" alt="image" src="https://github.com/user-attachments/assets/aef06306-af50-4d70-95d1-a9dc78762945">
 
 
-<img width="342" alt="image" src="https://github.com/jambardev/County-Cricket-Tour-Blog/assets/165150313/23f7ce00-eb1e-445c-9907-1d9b8a0ac391">
 
-<img width="342" alt="image" src="https://github.com/jambardev/County-Cricket-Tour-Blog/assets/165150313/700a36dc-2f99-4df0-85ee-53200f0b7073">
 
-<img width="340" alt="image" src="https://github.com/jambardev/County-Cricket-Tour-Blog/assets/165150313/e8b04755-ff45-4df3-b9a2-e1bb3d10491f">
 
-<img width="336" alt="image" src="https://github.com/jambardev/County-Cricket-Tour-Blog/assets/165150313/49dc9bda-dd92-4b6d-8451-63d404d9962e">
 
-<img width="464" alt="image" src="https://github.com/jambardev/County-Cricket-Tour-Blog/assets/165150313/3dbdb804-e36e-46dc-a8fd-6ad82ab44e8a">
 
-<img width="1035" alt="image" src="https://github.com/jambardev/County-Cricket-Tour-Blog/assets/165150313/460850e3-0d47-4b86-9007-75ded9d39902">
 
-<img width="694" alt="image" src="https://github.com/jambardev/County-Cricket-Tour-Blog/assets/165150313/ca92954d-ba27-4011-9542-3ea824956134">
+
+
 
 
 
