@@ -8,8 +8,8 @@ class PostForm(forms.ModelForm):
         model = Post
         fields = ['title', 'stadium', 'visitor', 'competition', 'content']
 
+
 class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment
         fields = ('body',)
-

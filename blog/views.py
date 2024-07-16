@@ -6,15 +6,20 @@ from .models import Post, Comment
 from .forms import PostForm
 from .forms import CommentForm
 
+
 # Create your views here.
+
+# View for the home page
 class PostList(generic.ListView):
     queryset = Post.objects.order_by('-created_on')
     template_name = "blog/index.html"
     # Sets number of posts on each page
     paginate_by = 6
 
+
 def about_view(request):
     return render(request, 'about.html')
+
 
 # View for a user to add a new post
 def add_post(request):
@@ -24,14 +29,18 @@ def add_post(request):
             post = form.save(commit=False)
             post.author = request.user
             post.save()
-            messages.success(request, 'Thanks for joining the discussion, post created successfully.')
+            messages.success(
+                request,
+                'Thanks for joining the discussion, post created successfully.'
+            )
             return redirect('home')
         else:
             messages.error(request, 'Error creating post.')
     else:
         form = PostForm()
-    
+
     return render(request, 'blog/add_post.html', {'form': form})
+
 
 # Function-based view to display individual posts
 def post_detail(request, slug):
@@ -50,7 +59,7 @@ def post_detail(request, slug):
             messages.add_message(
                 request, messages.SUCCESS,
                 'Comment submitted, thanks for joining the discussion.'
-    )
+            )
     comment_form = CommentForm()
 
     return render(
@@ -64,25 +73,39 @@ def post_detail(request, slug):
         }
     )
 
+
 # View allowing a user to edit their own comments
 def edit_comment(request, slug, comment_id):
     post = get_object_or_404(Post, slug=slug)
     comment = get_object_or_404(Comment, pk=comment_id, post=post)
-    
+
     if request.method == "POST":
         comment_form = CommentForm(data=request.POST, instance=comment)
 
         if comment_form.is_valid():
             comment_form.save()
-            messages.add_message(request, messages.SUCCESS, 'Thanks, Comment Updated!')
+            messages.add_message(
+                request,
+                messages.SUCCESS,
+                'Thanks, Comment Updated!'
+            )
             return HttpResponseRedirect(reverse('post_detail', args=[slug]))
         else:
-            messages.add_message(request, messages.ERROR, 'Sorry, Error updating comment!')
+            messages.add_message(
+                request,
+                messages.ERROR,
+                'Sorry, Error updating comment!'
+            )
 
     else:
         comment_form = CommentForm(instance=comment)
 
-    return render(request, 'blog/edit_comment.html', {'form': comment_form, 'post': post})
+    return render(
+        request,
+        'blog/edit_comment.html',
+        {'form': comment_form, 'post': post}
+    )
+
 
 # View allowing a user to delete their own comments
 def delete_comment(request, slug, comment_id):
@@ -92,11 +115,20 @@ def delete_comment(request, slug, comment_id):
 
     if comment.author == request.user:
         comment.delete()
-        messages.add_message(request, messages.SUCCESS, 'No problem, comment deleted!')
+        messages.add_message(
+            request,
+            messages.SUCCESS,
+            'No problem, comment deleted!'
+        )
     else:
-        messages.add_message(request, messages.ERROR, 'You can only delete your own comments!')
+        messages.add_message(
+            request,
+            messages.ERROR,
+            'You can only delete your own comments!'
+        )
 
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
 
 # View allowing a user to delete their own posts
 def delete_post(request, slug):
@@ -105,11 +137,17 @@ def delete_post(request, slug):
     if post.author == request.user:
         if request.method == "POST":
             post.delete()
-            messages.add_message(request, messages.SUCCESS, 'No problem, that post has been deleted!')
+            messages.add_message(
+                request,
+                messages.SUCCESS,
+                'No problem, that post has been deleted!'
+            )
             return HttpResponseRedirect(reverse('home'))
     else:
-        messages.add_message(request, messages.ERROR, 'You can only delete your own posts!')
+        messages.add_message(
+            request,
+            messages.ERROR,
+            'You can only delete your own posts!'
+        )
 
     return render(request, 'blog/delete_post.html', {'post': post})
-        
-

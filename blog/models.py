@@ -53,6 +53,7 @@ COMPETITION_CHOICES = [
 
 # Create your models here.
 
+
 # New post model
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
@@ -60,16 +61,29 @@ class Post(models.Model):
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="blog_posts"
     )
-    stadium = models.CharField(max_length=50, choices=STADIUM_CHOICES, default='Lords')
-    visitor = models.CharField(max_length=50, choices=VISITORS_CHOICES, default='Surrey')
-    competition = models.CharField(max_length=20, choices=COMPETITION_CHOICES, default='County Champ Div 1')
+    stadium = models.CharField(
+        max_length=50,
+        choices=STADIUM_CHOICES,
+        default='Lords'
+    )
+    visitor = models.CharField(
+        max_length=50,
+        choices=VISITORS_CHOICES,
+        default='Surrey'
+    )
+    competition = models.CharField(
+        max_length=20,
+        choices=COMPETITION_CHOICES,
+        default='County Champ Div 1'
+    )
     content = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return f"{self.title} | written by {self.author} on {self.created_on}"
 
-#Comment model
+
+# Comment model
 class Comment(models.Model):
     post = models.ForeignKey(
         Post, on_delete=models.CASCADE, related_name="comments"
@@ -82,6 +96,3 @@ class Comment(models.Model):
 
     def __str__(self):
         return f"Comment added by {self.author} on {self.added_on}"
-
-
-
