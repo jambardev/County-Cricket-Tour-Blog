@@ -152,13 +152,12 @@ The current iteration of this project has been designed to meet the MVP of the t
 
 I have used W3C validation service for the HTML and taken it from the page source of the live site.
 
-# Validation
-## HTML
-
 | Page | W3C URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | | | Pass: No Errors |
-| About |  |  | Pass: Validator suggests changing the height and width of the image to a digit, trialled this but it works better as 100% so have left it. |
+| Home | https://validator.w3.org/nu/#textarea | <img width="672" alt="image" src="https://github.com/user-attachments/assets/1ea40ab4-3b08-428d-be6e-d7c4260f7f40">
+ | Pass: No Errors |
+| About | https://validator.w3.org/nu/#textarea | <img width="699" alt="image" src="https://github.com/user-attachments/assets/2d83072e-e961-4dfc-8eb4-507f526ce2f7">
+ | Pass: Validator suggests changing the height and width of the image to a digit, trialled this but it works better as 100% so have left it. |
 | Individual Post |  |  | Pass: Same issue as the about page with the image |
 | Register |  |  | Pass: Errors shown in the validator. These are from the Django account templates. |
 | Login |  |  | Pass: No Errors |
