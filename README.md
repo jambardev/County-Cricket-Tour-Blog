@@ -80,7 +80,50 @@ As the main purpose of this project was the functionality of the site I did not 
 I selected the main colours of the site with cricket in mind. The dark read of the navigation options and page titles was based on a cricket ball. The green of the header and footer the pitch. The backgroudnd white the colours worn during county cricket.
 
 #8B0000 - Dark red for the navigation options and page titles
+
 #56ad56 - Green for the header and footer
+
+# Main Features:
+
+### Home Page
+
+The home page of the site shows the latest posts from the community. These are viewable for anyone visiting the site and you can click on a post to view the content in detail. However to create a new post or comment on an existing one a user must be authorised. From the home page you can also access, the about, register and login pages.
+
+<img width="1293" alt="image" src="https://github.com/user-attachments/assets/b636b25a-d5c0-462e-ae61-4bec93a75a43">
+
+### About page
+
+The about page of the site gives a brief introduction and some basic guidelines, i.e always be kind. It also has what is the stock photo for the site currently. A county game taking place at the Riverside ground in Durham, taken by myself.
+
+<img width="1440" alt="image" src="https://github.com/user-attachments/assets/748be14e-8970-48c1-a801-f65f23c10fc1">
+
+### Register/Sign Up pages
+
+These were created using the Django templates and allow a user to first register for the site and subsequently to login. Once logged in they can create posts/comment.
+
+<img width="1436" alt="image" src="https://github.com/user-attachments/assets/de568dd9-afd1-4db4-a96c-c091402068e5">
+
+<img width="1436" alt="image" src="https://github.com/user-attachments/assets/08ef234e-0288-4e6e-b2ca-78b6911ae325">
+
+### Footer
+
+Viewable on all pages, the footer contains links to social media sites. At some point in the future these will be links to profiles for the blog, at the moment they simply link to the homepages of each company. The footer, along with the header and navbar help provide consistency accross the site.
+
+<img width="1438" alt="image" src="https://github.com/user-attachments/assets/bf11aee9-d50e-482b-bf79-56e8f9028776">
+
+### A post
+
+By clicking on the title of an individual post on the homepage a user can view the blog post in it's entirety. If it is the user's own post they can delete it from here. If it is a different users post comments can be left. Once submitted comments can be edited and deleted. There is also a small comment counter that shows how many comments have been left on each post.
+
+<img width="1433" alt="image" src="https://github.com/user-attachments/assets/663dde00-f651-4745-8a0e-92eb5133f69d">
+
+<img width="1432" alt="image" src="https://github.com/user-attachments/assets/a1e535f7-15ab-4d9e-8d31-3f1d9f514fb4">
+
+### Creating a post
+
+Users who are logged in can add a new post by clicking the "New Post" link on the nav bar and completing the form. The dropdowns give the option of selecting where you saw the game (all 18 county grounds are listed) and the visitors. Once submitted this post will appear on the homepage for other users to view it. The most recent post will appear at the top left of the page.
+
+<img width="1437" alt="image" src="https://github.com/user-attachments/assets/2e6b3823-0510-470f-a207-b2febeed6bc5">
 
 
 
