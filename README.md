@@ -83,6 +83,18 @@ I selected the main colours of the site with cricket in mind. The dark read of t
 
 #56ad56 - Green for the header and footer
 
+## Database Design
+
+Below is a simple database design for the project, created on Excel. This was important to visualise how my models would relate to each other and shows the data needed for each model.
+
+<img width="733" alt="image" src="https://github.com/user-attachments/assets/e08dd2d7-532e-4368-b2a9-9d422030eb70">
+
+## User Flow Chart
+
+I used Lucidchart to create a simple user flow chart to demonstrate how a user would be able to move through the site.
+
+<img width="693" alt="image" src="https://github.com/user-attachments/assets/618a7e55-965e-4fa1-b087-aa47c47569da">
+
 # Main Features:
 
 ### Home Page
@@ -134,7 +146,27 @@ The current iteration of this project has been designed to meet the MVP of the t
 * A profile page so a user can see all of their own posts.
 * A logo or some artwork to make the homepage more interesting and visually appealing.
 
-# Database Deign
+# Validation
+
+## HTML
+
+I have used W3C validation service for the HTML and taken it from the page source of the live site.
+
+# Validation
+## HTML
+
+| Page | W3C URL | Screenshot | Notes |
+| --- | --- | --- | --- |
+| Home | | | Pass: No Errors |
+| About |  |  | Pass: Validator suggests changing the height and width of the image to a digit, trialled this but it works better as 100% so have left it. |
+| Individual Post |  |  | Pass: Same issue as the about page with the image |
+| Register |  |  | Pass: Errors shown in the validator. These are from the Django account templates. |
+| Login |  |  | Pass: No Errors |
+| New Post |  |  | Pass: No Errors |
+| Edit Comment |  |  | Pass: No Errors |
+
+
+
 
 
 
