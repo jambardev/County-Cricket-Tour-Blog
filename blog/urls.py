@@ -11,5 +11,4 @@ urlpatterns = [
     path('<slug:slug>/edit_comment/<int:comment_id>', views.edit_comment, name='edit_comment'),
     path('<slug:slug>/delete_comment/<int:comment_id>', views.delete_comment, name='delete_comment'),
     path('<slug:slug>/delete_post/', delete_post, name='delete_post'),
-    #path('your-posts/', views.your_posts, name='your_posts'),
 ]

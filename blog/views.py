@@ -111,17 +111,5 @@ def delete_post(request, slug):
         messages.add_message(request, messages.ERROR, 'You can only delete your own posts!')
 
     return render(request, 'blog/delete_post.html', {'post': post})
-
-# View allowing a user to see their own posts
-#def your_posts(request):
-#    def get(self, request):
-#        if request.user.is_authenticated:
-#            post = Post.objects.filter(author=request.user, status=0)
-
-#            return render(
-#                request, 'your_posts.html')
-#        else:
-#            messages.add_message(request, messages.ERROR, 'You can only view your own posts if you have some!')
-#    return render(request, 'blog/your_posts.html', {'post': post})
         
 
