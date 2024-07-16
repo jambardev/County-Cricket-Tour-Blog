@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from autoslug import AutoSlugField
 
-STATUS = ((0, "Draft"), (1, "Published"))
+
 STADIUM_CHOICES = [
     ('Racecourse Ground (Derbyshire)', 'Racecourse Ground (Derbyshire)'),
     ('Riverside (Durham)', 'Riverside (Durham)'),
@@ -65,7 +65,6 @@ class Post(models.Model):
     competition = models.CharField(max_length=20, choices=COMPETITION_CHOICES, default='County Champ Div 1')
     content = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
-    status = models.IntegerField(choices=STATUS, default=0)
 
     def __str__(self):
         return f"{self.title} | written by {self.author} on {self.created_on}"

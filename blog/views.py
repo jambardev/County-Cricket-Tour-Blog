@@ -8,7 +8,7 @@ from .forms import CommentForm
 
 # Create your views here.
 class PostList(generic.ListView):
-    queryset = Post.objects.filter(status=1)
+    queryset = Post.objects.order_by('-created_on')
     template_name = "blog/index.html"
     # Sets number of posts on each page
     paginate_by = 6
@@ -25,7 +25,7 @@ def add_post(request):
             post.author = request.user
             post.save()
             messages.success(request, 'Thanks for joining the discussion, post created successfully.')
-            return redirect('post_detail', slug=post.slug)
+            return redirect('home')
         else:
             messages.error(request, 'Error creating post.')
     else:
@@ -36,7 +36,7 @@ def add_post(request):
 # Function-based view to display individual posts
 def post_detail(request, slug):
 
-    queryset = Post.objects.filter(status=1)
+    queryset = Post.objects
     post = get_object_or_404(queryset, slug=slug)
     comments = post.comments.all().order_by("-added_on")
     comment_count = post.comments.count()
@@ -66,7 +66,7 @@ def post_detail(request, slug):
 
 # View allowing a user to edit their own comments
 def edit_comment(request, slug, comment_id):
-    post = get_object_or_404(Post, slug=slug, status=1)
+    post = get_object_or_404(Post, slug=slug)
     comment = get_object_or_404(Comment, pk=comment_id, post=post)
     
     if request.method == "POST":
@@ -86,7 +86,7 @@ def edit_comment(request, slug, comment_id):
 
 # View allowing a user to delete their own comments
 def delete_comment(request, slug, comment_id):
-    queryset = Post.objects.filter(status=1)
+    queryset = Post.objects
     post = get_object_or_404(queryset, slug=slug)
     comment = get_object_or_404(Comment, pk=comment_id)
 
@@ -111,3 +111,17 @@ def delete_post(request, slug):
         messages.add_message(request, messages.ERROR, 'You can only delete your own posts!')
 
     return render(request, 'blog/delete_post.html', {'post': post})
+
+# View allowing a user to see their own posts
+#def your_posts(request):
+#    def get(self, request):
+#        if request.user.is_authenticated:
+#            post = Post.objects.filter(author=request.user, status=0)
+
+#            return render(
+#                request, 'your_posts.html')
+#        else:
+#            messages.add_message(request, messages.ERROR, 'You can only view your own posts if you have some!')
+#    return render(request, 'blog/your_posts.html', {'post': post})
+        
+
