@@ -152,18 +152,15 @@ The current iteration of this project has been designed to meet the MVP of the t
 
 I have used W3C validation service for the HTML and taken it from the page source of the live site.
 
-# Validation
-## HTML
-
-| Page | W3C URL | Screenshot | Notes |
-| --- | --- | --- | --- |
-| Home | | | Pass: No Errors |
-| About |  |  | Pass: Validator suggests changing the height and width of the image to a digit, trialled this but it works better as 100% so have left it. |
-| Individual Post |  |  | Pass: Same issue as the about page with the image |
-| Register |  |  | Pass: Errors shown in the validator. These are from the Django account templates. |
-| Login |  |  | Pass: No Errors |
-| New Post |  |  | Pass: No Errors |
-| Edit Comment |  |  | Pass: No Errors |
+| Page | Screenshot | Result |
+| --- | --- | --- |
+| Home | <img width="672" alt="image" src="https://github.com/user-attachments/assets/1ea40ab4-3b08-428d-be6e-d7c4260f7f40"> | Pass: No Errors |
+| About | <img width="699" alt="image" src="https://github.com/user-attachments/assets/2d83072e-e961-4dfc-8eb4-507f526ce2f7"> | Pass: Validator suggests changing the height and width of the image to a digit, trialled this but it works better as 100% so have left it. |
+| Individual Post | <img width="636" alt="image" src="https://github.com/user-attachments/assets/357ca54c-5743-43bd-bfbc-3d2157b91e64"> | Pass: Same issue as the about page with the image |
+| Register | <img width="605" alt="image" src="https://github.com/user-attachments/assets/2ea8ca4b-a61b-4a75-9088-61b857ca997d"> | Pass: Errors shown in the validator. These are from the Django account templates, not issues I can fix. |
+| Login | <img width="643" alt="image" src="https://github.com/user-attachments/assets/99718e72-561f-4e02-afd7-a7fe38e44cfe"> | Pass: No Errors |
+| New Post | <img width="595" alt="image" src="https://github.com/user-attachments/assets/658d33e2-1a6c-4758-a932-105e23ad1e1b"> | Pass: No Errors |
+| Edit Comment | <img width="616" alt="image" src="https://github.com/user-attachments/assets/8a1b001e-4229-4786-ba47-c837b5d40fea"> | Pass: No Errors |
 
 
 
