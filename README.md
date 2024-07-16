@@ -65,8 +65,22 @@ The target audience is quite simply anyone who loves county cricket.
 
 <img width="239" alt="image" src="https://github.com/user-attachments/assets/aef06306-af50-4d70-95d1-a9dc78762945">
 
+# Agile
 
+To plan and create this project I used the Agile principles in conjuction with a projectboard on Github. This was the first time I had used Agile as an individual developer rather than as a part of a Hackathon team. However whilst I did not need to assign tasks I still found it useful to set out a plan to work through the project and work towards fulfilling the acceptance criteria of User Stories.
 
+<img width="1439" alt="image" src="https://github.com/user-attachments/assets/decb7ac6-59ff-46d7-9d3d-a20e3153fb9b">
+
+# Design Choices
+
+As the main purpose of this project was the functionality of the site I did not focus too much on the design of the site. However my main aim was for a easy to navigate site that enhanced the user experience and layed out the information of the blog posts in a clear way.
+
+## Colour Scheme
+
+I selected the main colours of the site with cricket in mind. The dark read of the navigation options and page titles was based on a cricket ball. The green of the header and footer the pitch. The backgroudnd white the colours worn during county cricket.
+
+#8B0000 - Dark red for the navigation options and page titles
+#56ad56 - Green for the header and footer
 
 
 
