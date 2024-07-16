@@ -125,6 +125,19 @@ Users who are logged in can add a new post by clicking the "New Post" link on th
 
 <img width="1437" alt="image" src="https://github.com/user-attachments/assets/2e6b3823-0510-470f-a207-b2febeed6bc5">
 
+# Future Features
+
+The current iteration of this project has been designed to meet the MVP of the task. In the future there are several features I would like to implement.
+
+* The ability for a user to upload a photo to accompany each post.
+* The ability for a user to edit a post once it is created. Currently it can be deleted but only comments can be edited.
+* A profile page so a user can see all of their own posts.
+* A logo or some artwork to make the homepage more interesting and visually appealing.
+
+# Database Deign
+
+
+
 
 
 
