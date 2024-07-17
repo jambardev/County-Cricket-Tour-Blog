@@ -101,4 +101,23 @@
         width: 100%;
         margin-right: 0;
     }
+
+    /* Styling for navbar on a mobile */
+    .nav-btn {
+        font-size: 14px;
+        margin: 0 4px;
+    }
+
+    .navbar .container-fluid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .user-msg {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+    }
 }
