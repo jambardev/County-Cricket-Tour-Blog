@@ -240,33 +240,41 @@ Laptop Home Page:
 
 <img width="1431" alt="image" src="https://github.com/user-attachments/assets/9e755fc6-05d3-4ef1-b672-1a4b0ad45316">
 
+
 Tablet Home Page:
 
 <img width="406" alt="image" src="https://github.com/user-attachments/assets/25055c7d-bb3c-44cf-b264-11271a7d9039">
+
 
 Mobile Home Page:
 
 <img width="274" alt="image" src="https://github.com/user-attachments/assets/b2eaa7e6-5794-4850-b6f9-ad499f02a254">
 
+
 Mobile Title and Navbar: 
 
 <img width="287" alt="image" src="https://github.com/user-attachments/assets/881845e2-0b79-46eb-9097-b9ffcee642b0">
+
 
 Tablet Title and Navbar:
 
 <img width="415" alt="image" src="https://github.com/user-attachments/assets/1178352d-6f54-44ee-9b02-4fe88a71cdc1">
 
+
 Laptop Title and Navbar:
 
 <img width="1440" alt="image" src="https://github.com/user-attachments/assets/53bd49f0-91f5-4a11-9b80-367a9e0dedb5">
+
 
 Laptop Individual Post:
 
 <img width="1414" alt="image" src="https://github.com/user-attachments/assets/934d5bc5-deb8-41b7-8392-0f0b261dc350">
 
+
 Tablet Individual Post:
 
 <img width="410" alt="image" src="https://github.com/user-attachments/assets/bec37205-395e-4b80-907a-69684e48e60d">
+
 
 Mobile Individual Post:
 
