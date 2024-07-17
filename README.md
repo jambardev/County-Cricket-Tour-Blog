@@ -162,6 +162,31 @@ I have used W3C validation service for the HTML and taken it from the page sourc
 | New Post | <img width="595" alt="image" src="https://github.com/user-attachments/assets/658d33e2-1a6c-4758-a932-105e23ad1e1b"> | Pass: No Errors |
 | Edit Comment | <img width="616" alt="image" src="https://github.com/user-attachments/assets/8a1b001e-4229-4786-ba47-c837b5d40fea"> | Pass: No Errors |
 
+## CSS
+
+I have used the W3C Jigsaw validator for my CSS file.
+
+It showed no errors as per the screenshot.
+
+<img width="1407" alt="image" src="https://github.com/user-attachments/assets/cda480b8-33e1-41bb-b500-238728f82e38">
+
+## Python
+
+| App | File | Screenshot | Result |
+| --- | --- | --- | --- |
+| blog | admin | <img width="1099" alt="image" src="https://github.com/user-attachments/assets/481e3658-5ac6-40d3-8d59-e3d4f379a74f"> | Pass: No Errors |
+| blog | apps | <img width="1102" alt="image" src="https://github.com/user-attachments/assets/1ee75a96-b7cd-4cb1-81e2-4e2219bb3fbd"> | Pass: No Errors |
+| blog | forms | <img width="1112" alt="image" src="https://github.com/user-attachments/assets/a3dfe60d-0075-4899-b2f4-453463ca40b5"> | Pass: No Errors |
+| blog | models | <img width="1123" alt="image" src="https://github.com/user-attachments/assets/39b056fb-f271-451f-9cc0-e913af6b6fa0">| Pass: No Errors |
+| blog | tests | <img width="1104" alt="image" src="https://github.com/user-attachments/assets/b861580e-20ca-410f-a5dd-e6d0d9adb3d4"> | Pass: No Errors |
+| blog | urls | <img width="1096" alt="image" src="https://github.com/user-attachments/assets/db9d762c-8e7c-435f-b825-60fc189253d4"> | Pass: No Errors |
+| blog | views | <img width="1091" alt="image" src="https://github.com/user-attachments/assets/bea6fbc8-47cc-4341-8746-2866d699e10c"> | Pass: No Errors |
+| countychamp | asgi | <img width="1112" alt="image" src="https://github.com/user-attachments/assets/d0d0c717-5fce-4def-b9a8-a9ca0ac97830"> | Pass: No Errors |
+| countychamp | settings | <img width="1118" alt="image" src="https://github.com/user-attachments/assets/908e4697-a288-416e-a376-df4668889fd7">| Pass: No Errors |
+| countychamp | urls | <img width="1121" alt="image" src="https://github.com/user-attachments/assets/0c6b9633-afb5-434b-8bc8-cbaaa4556270"> | Pass: No Errors |
+| countychamp | wsgi | <img width="1095" alt="image" src="https://github.com/user-attachments/assets/e3c4eb5c-8efa-4dc2-b632-ffdbcde6a6d3"> | Pass: No Errors |
+
+
 
 
 
