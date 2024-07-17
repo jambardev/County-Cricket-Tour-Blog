@@ -4,6 +4,8 @@ This blog site is a page that allows lovers of county cricket to come together a
 
 The live application can be viewed here:
 
+https://county-cricket-blog-a93042f7114f.herokuapp.com/
+
 # Purpose and Target Audience:
 
 **Problem Statement:**
@@ -225,7 +227,14 @@ Whilst testing the below functions I also tracked that the associated message wo
 | Not logged in | If not logged in a user cannot add a post, comment, or edit any of their existing posts or comments | Pass | <img width="1199" alt="image" src="https://github.com/user-attachments/assets/5d109f47-0533-4fc9-89eb-0b08d75b1d3a"> |
 | Pop up messages | All pop up messages show the users previous action | Pass | <img width="1219" alt="image" src="https://github.com/user-attachments/assets/564e5244-7be6-470a-8aba-2949df606a10"> |
 
+## Responsive Design
 
+I have tested my app on a MacBook Air with a 13" screen, an additional 16" monitor and on a Samsung Galaxy 7 mobile. I have used Chrome dev tools to look at a tablet sized screen.
+Overall the app looks as it should accross all screen sizes.
+The main areas of responsive design are the home page and the view for an individual post.
+The home page when viewed as a desktop will show 6 posts in 2 rows of 3. A tablet will show 3 rows of 2 and a mobile will show a single column of posts.
+When viewing an individual post the image is no longer visible on a mobile.
+Another slight change for mobile devices is the layout of the navbar.
 
 
 
