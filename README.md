@@ -186,6 +186,25 @@ It showed no errors as per the screenshot.
 | countychamp | urls | <img width="1121" alt="image" src="https://github.com/user-attachments/assets/0c6b9633-afb5-434b-8bc8-cbaaa4556270"> | Pass: No Errors |
 | countychamp | wsgi | <img width="1095" alt="image" src="https://github.com/user-attachments/assets/e3c4eb5c-8efa-4dc2-b632-ffdbcde6a6d3"> | Pass: No Errors |
 
+# Testing
+
+I have completed the following manual testing of my app on both a laptop and a mobile device.
+
+## Links
+
+| Link | Expected Outcome | Outcome |
+| ------- | ---------------- | ----- |
+| Home | Navigates to the home page when clicked | Pass |
+| About | Navigates to the about the site page when clicked | Pass |
+| Register (navbar) | Navigates to the register page when clicked | Pass |
+| Login (navar) | Navigates to the login page when clicked | Pass |
+| Login (within register page) | Navigates to the login page when clicked | Pass |
+| Sign up (within login page) | Navigates to the register page when clicked | Pass |
+| Post titles | Navigates to the individual post page for that post | Pass |
+| Next (if more than 6 posts on page) | Navigates to the next set of blog posts | Pass |
+| Previous (if not on first page of posts) | Navigates to the previous page of blog posts | Pass |
+| Social media icons | Open a new window and navigates to the homepage of the relevant social media site | Pass |
+
 
 
 
