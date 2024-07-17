@@ -15,7 +15,7 @@ This app will allow people who love and follow county cricket around the country
 **Target Audience:**
 The target audience is quite simply anyone who loves county cricket.
 
-# User Stories:
+# User Stories
 
 * As the site owner I want the site to be easy and self explanatory to navigate.
 * As a user I want to be able to review the posts of other people and add comments.
@@ -186,7 +186,7 @@ It showed no errors as per the screenshot.
 | countychamp | urls | <img width="1121" alt="image" src="https://github.com/user-attachments/assets/0c6b9633-afb5-434b-8bc8-cbaaa4556270"> | Pass: No Errors |
 | countychamp | wsgi | <img width="1095" alt="image" src="https://github.com/user-attachments/assets/e3c4eb5c-8efa-4dc2-b632-ffdbcde6a6d3"> | Pass: No Errors |
 
-# Testing
+# Testing:
 
 I have completed the following manual testing of my app on both a laptop and a mobile device.
 
@@ -204,6 +204,32 @@ I have completed the following manual testing of my app on both a laptop and a m
 | Next (if more than 6 posts on page) | Navigates to the next set of blog posts | Pass |
 | Previous (if not on first page of posts) | Navigates to the previous page of blog posts | Pass |
 | Social media icons | Open a new window and navigates to the homepage of the relevant social media site | Pass |
+
+## Functionality
+
+Whilst testing the below functions I also tracked that the associated message would pop up, confirming the action that the user had taken.
+
+| Feature | Expected Outcome | Outcome | Screenshot |
+| ------- | ---------------- | ----- | --------- |
+| Register | A new user can create a user profile | Pass | <img width="1237" alt="image" src="https://github.com/user-attachments/assets/b24529b0-dfcb-437e-80b2-92dc6d45a021"> |
+| Login | An existing user can log in to the site and once logged in the message confirming this remains in the navbar | Pass | <img width="735" alt="image" src="https://github.com/user-attachments/assets/5dfc33f4-4821-48c8-bee7-5796324fc6e2"> |
+| New post | An authorised user can create a new post | Pass | <img width="1229" alt="image" src="https://github.com/user-attachments/assets/59ff97d2-eb1f-49d9-b71a-3ba2b1b6109d"> |
+| Delete own post | A  logged in user can delete their own posts, a second screen asks if they are sure | Pass | <img width="1229" alt="image" src="https://github.com/user-attachments/assets/af07467b-721a-4155-a6a8-cb8edf4baadc"> |
+| Cannot delete other posts | A user cannot delete another users post | Pass | <img width="1230" alt="image" src="https://github.com/user-attachments/assets/40156028-8b24-493a-aa2f-2403197a39c0"> |
+| Leave a comment | A user that is logged in can leave a comment on any post | <img width="1200" alt="image" src="https://github.com/user-attachments/assets/80513593-e75b-4615-a9a3-f562ed402e5d"> |
+| Edit or delete own comment | A user that is logged in can edit or delete their own comment | <img width="1186" alt="image" src="https://github.com/user-attachments/assets/a13f2415-6ada-4084-9a25-05a3b28132d2"> |
+| Cannot edit or delete other comments | A user that is logged in cannot edit or delete another users comments | <img width="1180" alt="image" src="https://github.com/user-attachments/assets/fba9bd36-744b-4545-8085-b605a4967ac6"> |
+| Comment counter | The comment counter shows how many comments have been made on a post (Page made need to be reloaded) | <img width="1187" alt="image" src="https://github.com/user-attachments/assets/34309824-69c3-4ad9-9abb-9f526302bdab"> |
+| Next/previous | Only 6 posts will be displayed on the home page. To see more a user must press the next button, which will then display the next 6 posts. Can go back a page by pressing previous. | <img width="1197" alt="image" src="https://github.com/user-attachments/assets/48cfcfe9-9e76-427e-8959-651d4a018af2"> |
+| Logout | A user can log out, a second screen confirms this is what they want | Pass | <img width="1244" alt="image" src="https://github.com/user-attachments/assets/a2b8ad4f-96ca-406e-b767-1b6f3d3e1f19"> |
+| Not logged in | If not logged in a user cannot add a post, comment, or edit any of their existing posts or comments | Pass | <img width="1199" alt="image" src="https://github.com/user-attachments/assets/5d109f47-0533-4fc9-89eb-0b08d75b1d3a"> |
+| Pop up messages | All pop up messages show the users previous action | Pass | <img width="1219" alt="image" src="https://github.com/user-attachments/assets/564e5244-7be6-470a-8aba-2949df606a10"> |
+
+
+
+
+
+
 
 
 
