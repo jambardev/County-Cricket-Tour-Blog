@@ -272,8 +272,55 @@ Mobile Individual Post:
 
 <img width="272" alt="image" src="https://github.com/user-attachments/assets/a9d1b320-99fe-4879-96a7-1a07c9242831">
 
-<br>
+# Tools and Technologies:
 
+The technologies implemented in this app included HTML5, CSS, Bootstrap, Python and Django.
+
+* Python used as the back-end programming language
+* Django for the user authorisation templates
+* Git used for version control
+* GitHub used for secure online code storage
+* Gitpod used as a cloud-based IDE for development.
+* Bootstrap used for pre-built components.
+* FontAwesome was used for the social media icons.
+* Code Institute Database used as the Postgres database.
+* Heroku used for hosting the deployed back-end site.
+* Balsamiq used for the wireframes in the planning stage.
+* LucidChart used to create the user flow diagram.
+* Excel for my database diagram.
+
+* Google and Chat GPT used when querying an error message.
+
+# Languages Used:
+* HTML5
+* CSS
+* Python
+
+# Deployment:
+
+I have used Heroku to deploy the project following the steps used in the Code Institute LMS. The link for the deployed project is https://county-cricket-blog-a93042f7114f.herokuapp.com/
+
+# Bugs:
+
+As with all developers I encountered several bugs when developing my project. The main one was to do with my post model. Originally I had a status field with the option for a post to be saved as a draft. However when draft was selected there was nowhere for the draft post to go. After a bit of trial and error I decided to remove this as an option so in the current version there is no status field. I also encountered some issues that were out of my control to do with the database which made the final stages of the project quite challenging.
+
+# Credits:
+
+* My main resource for this project, particularly at the start when getting set up was the Code Institure project I think Terefore I Blog. For the most part I was able to follow the basic steps of setting up a blog project by following this walkthrough.
+
+* I have also used Chat GPT, particularly to help establish the meaning of error codes.
+
+* FontAwesome for the social media icons.
+
+* Bootstrap for some basic CSS and button components.
+
+* Balsamiq for the wireframes.
+
+* LucidChart for the User Flow Diagram.
+
+* The photo used on the site is my own.
+
+* I would also like to thank for their help and guidance, the other members of my cohort, my facilitator Iris and the CI coding coach Martin.
 
 
 
