@@ -192,6 +192,12 @@ It showed no errors as per the screenshot.
 
 I have completed the following manual testing of my app on both a laptop and a mobile device.
 
+## Browsers
+
+I completed the testing on both Chrome and Safari. The functionality worked as expected on both, however on Safari there were some minor issues with the CSS and the navbar, as per the below image.
+
+<img width="1359" alt="image" src="https://github.com/user-attachments/assets/ebc84f57-2dc6-4104-9a56-27016ad3df9c">
+
 ## Links
 
 | Link | Expected Outcome | Outcome |
@@ -226,6 +232,30 @@ Whilst testing the below functions I also tracked that the associated message wo
 | Logout | A user can log out, a second screen confirms this is what they want | Pass | <img width="1244" alt="image" src="https://github.com/user-attachments/assets/a2b8ad4f-96ca-406e-b767-1b6f3d3e1f19"> |
 | Not logged in | If not logged in a user cannot add a post, comment, or edit any of their existing posts or comments | Pass | <img width="1199" alt="image" src="https://github.com/user-attachments/assets/5d109f47-0533-4fc9-89eb-0b08d75b1d3a"> |
 | Pop up messages | All pop up messages show the users previous action | Pass | <img width="1219" alt="image" src="https://github.com/user-attachments/assets/564e5244-7be6-470a-8aba-2949df606a10"> |
+
+## Lighthouse Audit Tool
+
+I've tested my app using the Lighthouse tool to check for any major issues. Some of the scores could be better, but overall they are ok.
+
+Home:
+
+<img width="1370" alt="image" src="https://github.com/user-attachments/assets/4d4a0ca7-49b2-4815-8fb7-544beb35dbf4">
+
+About:
+
+<img width="1354" alt="image" src="https://github.com/user-attachments/assets/b5176fb0-a7cf-4519-876f-6dc50166d8ac">
+
+Individual Post:
+
+<img width="1349" alt="image" src="https://github.com/user-attachments/assets/73dce496-0c12-4d27-af7f-2c28224dca41">
+
+Register:
+
+<img width="1354" alt="image" src="https://github.com/user-attachments/assets/65ff6539-aba8-4d0e-94b1-3c726e7d44dc">
+
+Login:
+
+<img width="1359" alt="image" src="https://github.com/user-attachments/assets/8532739e-9aea-4deb-ab4f-2c2076f0987b">
 
 ## Responsive Design
 
