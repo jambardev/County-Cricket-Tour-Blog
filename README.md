@@ -148,7 +148,7 @@ The current iteration of this project has been designed to meet the MVP of the t
 * A profile page so a user can see all of their own posts.
 * A logo or some artwork to make the homepage more interesting and visually appealing.
 
-# Validation
+# Validation:
 
 ## HTML
 
@@ -194,9 +194,9 @@ I have completed the following manual testing of my app on both a laptop and a m
 
 ## Browsers
 
-I completed the testing on both Chrome and Safari. The functionality worked as expected on both, however on Safari there were some minor issues with the CSS and the navbar, as per the below image.
+I completed the testing on both Chrome and Safari. The functionality worked as expected on both, however on Safari there were some minor issues with the CSS and the navbar, as per the below image. 
 
-<img width="1359" alt="image" src="https://github.com/user-attachments/assets/ebc84f57-2dc6-4104-9a56-27016ad3df9c">
+<img width="1433" alt="image" src="https://github.com/user-attachments/assets/cf74ad09-990c-42bb-a1e1-aefbd76780c9">
 
 ## Links
 
