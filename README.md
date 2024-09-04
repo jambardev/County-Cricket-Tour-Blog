@@ -328,7 +328,61 @@ The technologies implemented in this app included HTML5, CSS, Bootstrap, Python 
 
 # Deployment:
 
-I have used Heroku to deploy the project following the steps used in the Code Institute LMS. The link for the deployed project is https://county-cricket-blog-a93042f7114f.herokuapp.com/
+I have used Heroku to deploy the project following the below steps. The link for the deployed project is https://county-cricket-blog-a93042f7114f.herokuapp.com/
+
+## Deployment Steps:
+
+### Create the Heroku App
+
+- Create a Heroku account or login if you already have one.
+- Once in the Heroku Dashboard, click on 'New' and then select 'Create New App'.
+- Choose a unique name for your project, for instance "County Cricket Blog".
+- Select the EU region.
+- Click on "Create App".
+- In the "Deploy" tab, choose GitHub as the deployment method.
+- Connect your GitHub account and find/connect your GitHub repository.
+
+### Set Up Environment Variables
+
+- Create an `env.py` in the top level of the Django app.
+- Import `os` in `env.py`.
+- Set up necessary environment variables in the `env.py`, including the secret key and database URL.
+- Update `settings.py` to use environment variables for secret key and database.
+- Configure environment variables in the Heroku "Settings" tab under "Config Vars".
+- Migrate the models to the new database connection in the terminal.
+- Configure static files and template directories in `settings.py`.
+- Add Heroku to the `ALLOWED_HOSTS` list.
+
+### Create a Procfile and Push Changes
+
+- Create a `Procfile` in the top level directory.
+- Add the command to run the project in the `Procfile`.
+- Add, commit, and push the changes to GitHub.
+
+### Heroku Deployment
+
+- In Heroku, navigate to the Deployment tab and deploy the branch manually.
+- Monitor the build logs for any errors.
+- Upon successful deployment, Heroku will display a link to the live site.
+- Complete further testing on the live site and amend code if needed.
+
+### Forking the Repository
+
+Forking the GitHub Repository allows you to create a copy of the original repository and then make changes without affecting the original.
+
+- Log in to GitHub or create an account.
+- Visit the [repository link](https://github.com/jambardev/County-Cricket-Tour-Blog).
+- Click on "Fork" at the top of the repository.
+
+### Creating a Clone of the Repository
+
+Creating a clone enables you to make a local copy of the repository.
+
+- Navigate to the existing repository (https://github.com/jambardev/County-Cricket-Tour-Blog).
+- Click on the <>Code button.
+- Select the "HTTPS" option under the "Local" tab and copy the URL.
+- Open your terminal and change the directory to your desired location.
+- Use `git clone` followed by the copied repository URL.
 
 # Bugs:
 
@@ -337,6 +391,8 @@ As with all developers I encountered several bugs when developing my project. Th
 # Credits:
 
 * My main resource for this project, particularly at the start when getting set up was the Code Institure project I think Terefore I Blog. For the most part I was able to follow the basic steps of setting up a blog project by following this walkthrough.
+
+* For the Deployment section of this ReadMe document I have looked at the steps laid out by a fellow Code Institute student Katie Coughlan in her project Soujourn Scribbles. (https://github.com/katiejanecoughlan/sojourn-scribbles-V3/tree/main)
 
 * I have also used Chat GPT, particularly to help establish the meaning of error codes.
 
