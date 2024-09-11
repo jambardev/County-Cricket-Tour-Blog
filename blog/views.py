@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect
 from .models import Post, Comment
 from .forms import PostForm
@@ -22,6 +23,7 @@ def about_view(request):
 
 
 # View for a user to add a new post
+@login_required
 def add_post(request):
     if request.method == 'POST':
         form = PostForm(request.POST)
@@ -75,6 +77,7 @@ def post_detail(request, slug):
 
 
 # View allowing a user to edit their own comments
+@login_required
 def edit_comment(request, slug, comment_id):
     post = get_object_or_404(Post, slug=slug)
     comment = get_object_or_404(Comment, pk=comment_id, post=post)
@@ -108,6 +111,7 @@ def edit_comment(request, slug, comment_id):
 
 
 # View allowing a user to delete their own comments
+@login_required
 def delete_comment(request, slug, comment_id):
     queryset = Post.objects
     post = get_object_or_404(queryset, slug=slug)
@@ -131,6 +135,7 @@ def delete_comment(request, slug, comment_id):
 
 
 # View allowing a user to delete their own posts
+@login_required
 def delete_post(request, slug):
     post = get_object_or_404(Post, slug=slug)
 
