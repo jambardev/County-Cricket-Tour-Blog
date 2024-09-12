@@ -85,7 +85,11 @@ def edit_comment(request, slug, comment_id):
     comment = get_object_or_404(Comment, pk=comment_id, post=post)
 
     if comment.author != request.user:
-        return HttpResponseForbidden("You are not allowed to edit this comment.")
+        return messages.add_message(
+                request,
+                messages.ERROR,
+                'Sorry, Error updating comment! You can only update your own comments.'
+            )
 
     if request.method == "POST":
         comment_form = CommentForm(data=request.POST, instance=comment)
