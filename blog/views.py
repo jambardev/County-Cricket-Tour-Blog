@@ -88,6 +88,7 @@ def edit_comment(request, slug, comment_id):
         comment_form = CommentForm(data=request.POST, instance=comment)
 
         if comment_form.is_valid():
+            comment.author = request.user
             comment_form.save()
             messages.add_message(
                 request,
@@ -99,7 +100,7 @@ def edit_comment(request, slug, comment_id):
             messages.add_message(
                 request,
                 messages.ERROR,
-                'Sorry, Error updating comment!'
+                'Sorry, Error updating comment! You can only update your own comments.'
             )
 
     else:
