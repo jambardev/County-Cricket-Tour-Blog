@@ -25,6 +25,10 @@ def about_view(request):
 # View for a user to add a new post
 @login_required
 def add_post(request):
+
+    if request.user != user:
+        return HttpResponseForbidden("You do not have permission to make this change")
+
     if request.method == 'POST':
         form = PostForm(request.POST)
         if form.is_valid():
@@ -51,6 +55,10 @@ def post_detail(request, slug):
     post = get_object_or_404(queryset, slug=slug)
     comments = post.comments.all().order_by("-added_on")
     comment_count = post.comments.count()
+
+    if request.user != user:
+        return HttpResponseForbidden("You cannot update someone else's profile.")
+
     if request.method == "POST":
         comment_form = CommentForm(data=request.POST)
         if comment_form.is_valid():
@@ -81,6 +89,9 @@ def post_detail(request, slug):
 def edit_comment(request, slug, comment_id):
     post = get_object_or_404(Post, slug=slug)
     comment = get_object_or_404(Comment, pk=comment_id, post=post)
+
+    if request.user != user:
+        return HttpResponseForbidden("You cannot update someone else's profile.")
 
     if request.method == "POST":
         comment_form = CommentForm(data=request.POST, instance=comment)
@@ -117,6 +128,9 @@ def delete_comment(request, slug, comment_id):
     post = get_object_or_404(queryset, slug=slug)
     comment = get_object_or_404(Comment, pk=comment_id)
 
+    if request.user != user:
+        return HttpResponseForbidden("You cannot update someone else's profile.")
+
     if comment.author == request.user:
         comment.delete()
         messages.add_message(
@@ -138,6 +152,9 @@ def delete_comment(request, slug, comment_id):
 @login_required
 def delete_post(request, slug):
     post = get_object_or_404(Post, slug=slug)
+
+    if request.user != user:
+        return HttpResponseForbidden("You cannot update someone else's profile.")
 
     if post.author == request.user:
         if request.method == "POST":
