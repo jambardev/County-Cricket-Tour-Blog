@@ -84,17 +84,10 @@ def edit_comment(request, slug, comment_id):
     post = get_object_or_404(Post, slug=slug)
     comment = get_object_or_404(Comment, pk=comment_id, post=post)
 
-    if comment.author != request.user:
-        return messages.add_message(
-                request,
-                messages.ERROR,
-                'Sorry, Error updating comment! You can only update your own comments.'
-            )
-
     if request.method == "POST":
         comment_form = CommentForm(data=request.POST, instance=comment)
 
-        if comment_form.is_valid():
+        if comment.author == request.user:
             comment_form.save()
             messages.add_message(
                 request,
