@@ -388,11 +388,13 @@ Creating a clone enables you to make a local copy of the repository.
 
 As with all developers I encountered several bugs when developing my project. The main one was to do with my post model. Originally I had a status field with the option for a post to be saved as a draft. However when draft was selected there was nowhere for the draft post to go. After a bit of trial and error I decided to remove this as an option so in the current version there is no status field. I also encountered some issues that were out of my control to do with the database which made the final stages of the project quite challenging.
 
+An issue was also identified with the authorisation of users being overrided by copying and pasting the URL. I was able to solve this issue using login decorators for each view where it was required.
+
 # Credits:
 
 * My main resource for this project, particularly at the start when getting set up was the Code Institure project I think Terefore I Blog. For the most part I was able to follow the basic steps of setting up a blog project by following this walkthrough.
 
-* For the Deployment section of this ReadMe document I have looked at the steps laid out by a fellow Code Institute student Katie Coughlan in her project Soujourn Scribbles. (https://github.com/katiejanecoughlan/sojourn-scribbles-V3/tree/main)
+* For the Deployment section of this ReadMe document I have looked at the steps laid out by a fellow Code Institute student Katie Coughlan in her project Soujourn Scribbles for guidance. (https://github.com/katiejanecoughlan/sojourn-scribbles-V3/tree/main)
 
 * I have also used Chat GPT, particularly to help establish the meaning of error codes.
 
